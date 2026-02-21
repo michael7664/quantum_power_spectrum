@@ -1,0 +1,6 @@
+#!/Users/shirshendusekharmondal/Desktop/work/HPC/Cosmology/quantum_power_spectrum/tng_data_prep/venv/bin/python3.12
+import sys
+from astropy.io.fits.scripts.fitscheck import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())

@@ -1,0 +1,15 @@
+HEADER (fixed 256 bytes total):
+  [8 bytes]  int64   N_gal          — number of galaxies
+  [8 bytes]  double  boxsize        — cMpc/h (0.0 if survey, not periodic box)
+  [8 bytes]  double  redshift       — effective redshift of sample
+  [1 byte]   uint8   is_periodic    — 1 = simulation box, 0 = survey (needs mask)
+  [1 byte]   uint8   has_weights    — 1 = weights meaningful, 0 = all 1.0
+  [64 bytes] char    source_name    — e.g. "TNG100-1_snap99" or "SDSS_DR17"
+  [64 bytes] char    coord_type     — "cartesian_comoving" or "radec_redshift"
+  [98 bytes] padding (zeros, reserved for future fields)
+
+DATA (N_gal × 32 bytes each):
+  [8 bytes]  double  x   — cMpc/h (or RA  in deg if coord_type=radec)
+  [8 bytes]  double  y   — cMpc/h (or DEC in deg)
+  [8 bytes]  double  z   — cMpc/h (or redshift z)
+  [8 bytes]  double  w   — weight (1.0 if uniform)

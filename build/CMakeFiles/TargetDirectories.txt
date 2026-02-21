@@ -1,0 +1,3 @@
+/Users/shirshendusekharmondal/Desktop/work/HPC/Cosmology/quantum_power_spectrum/build/CMakeFiles/quantum_ps.dir
+/Users/shirshendusekharmondal/Desktop/work/HPC/Cosmology/quantum_power_spectrum/build/CMakeFiles/edit_cache.dir
+/Users/shirshendusekharmondal/Desktop/work/HPC/Cosmology/quantum_power_spectrum/build/CMakeFiles/rebuild_cache.dir

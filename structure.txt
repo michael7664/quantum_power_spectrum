@@ -1,0 +1,30 @@
+quantum_power_spectrum/
+├── CMakeLists.txt
+├── include/
+│   ├── BackgroundCosmology.h
+│   ├── TransferFunction.h
+│   ├── PowerSpectrum.h
+│   ├── QuantumQFT.h
+│   ├── GalaxyCatalog.h          ← NEW: real data loader
+│   ├── LandySzalay.h            ← NEW: pair counting + LS estimator
+│   └── FKPEstimator.h           ← NEW: P(k) from real data
+├── src/
+│   ├── BackgroundCosmology.cpp
+│   ├── TransferFunction.cpp
+│   ├── PowerSpectrum.cpp
+│   ├── QuantumQFT.cpp
+│   ├── GalaxyCatalog.cpp        ← NEW
+│   ├── LandySzalay.cpp          ← NEW
+│   └── FKPEstimator.cpp         ← NEW
+├── data/
+│   ├── sdss_galaxies.dat        ← user puts real data here
+│   └── sdss_randoms.dat         ← random catalog (same geometry)
+├── main.cpp                     ← updated with mode selection
+├── deps/qpp/
+└── output/
+    ├── power_spectrum_theory.dat
+    ├── power_spectrum_data.dat
+    ├── xi_theory_classical.dat
+    ├── xi_theory_quantum.dat
+    ├── xi_data_classical.dat
+    └── xi_data_quantum.dat
